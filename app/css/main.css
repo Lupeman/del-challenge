@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Dancing+Script|Source+Sans+Pro");
+body {
+  background-color: #181818;
+  color: #EEEEEE;
+  margin: 20px;
+  padding: 0;
+  font-family: "Arimo", sans-serif; }
+
+.content-wrapper {
+  padding: 15%;
+  margin: 0 auto; }
+
+.carousel {
+  width: 70%; }
+
+.carousel img {
+  height: 350px;
+  width: 450px; }
+
+.logo {
+  height: 30px;
+  width: auto;
+  float: left; }
+
+.projectName {
+  text-transform: uppercase;
+  float: right; }
+
+.slick-slide {
+  height: 400px;
+  margin: 200px auto; }
+
+.slick-prev:before, .slick-next:before {
+  color: red;
+  position: absolute; }
+
+.page-info {
+  width: 80%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  color: #7F7F7F; }
+  .page-info h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+    color: #EEEEEE;
+    letter-spacing: .2em;
+    margin-bottom: 5px; }
+  .page-info h3 {
+    font-size: .6em;
+    text-transform: uppercase;
+    margin-top: 0; }
+  .page-info p {
+    font-size: 0.9375em; }
+  .page-info span {
+    font-family: 'Dancing Script', cursive;
+    text-transform: none; }
+
+button {
+  padding: 10px 30px;
+  text-transform: uppercase;
+  border: 2px solid #EEEEEE;
+  background: transparent;
+  color: #EEEEEE; }
+  button:hover {
+    background-color: #EEEEEE;
+    color: #181818; }
+
+.piano {
+  width: 80%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.fa-angle-left {
+  position: absolute;
+  bottom: -10%;
+  left: 40%; }
+
+.fa-angle-right {
+  position: absolute;
+  bottom: -10%;
+  right: 40%; }
