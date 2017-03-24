@@ -4,19 +4,21 @@ $body-font:'Arimo', sans-serif;
 $body-color: #181818;
 $accent-white: #EEEEEE;
 $text-color: #7F7F7F;
-
+$blurb-font-size: .75em;
+$all-caps: uppercase;
+$header-letter-spacing: .2em;
 
 body {
    background-color: $body-color;
    color: $accent-white;
-   margin: 20px;
-   padding: 0;
+   padding: 5%;
    font-family: $body-font;
 }
 
 .content-wrapper {
-  padding: 15%;
   margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
 }
 .carousel {
   width: 70%;
@@ -34,7 +36,7 @@ body {
 
 }
 .projectName {
-   text-transform: uppercase;
+   text-transform: $all-caps;
    float:right;
 }
 
@@ -51,21 +53,21 @@ body {
 
 
 .page-info {
-   width: 80%;
+   width: 90%;
    max-width: 800px;
    margin: 20px auto;
    text-align: center;
    color: $text-color;
    h1 {
      font-size: 2em;
-     text-transform: uppercase;
+     text-transform: $all-caps;
      color: $accent-white;
-     letter-spacing: .2em;
+     letter-spacing: $header-letter-spacing;
      margin-bottom: 5px;
    }
    h3 {
      font-size: .6em;
-     text-transform: uppercase;
+     text-transform: $all-caps;
      margin-top: 0;
    }
    p {
@@ -79,7 +81,7 @@ body {
 
 button {
   padding: 10px 30px;
-  text-transform: uppercase;
+  text-transform: $all-caps;
   border: 2px solid $accent-white;
   background: transparent;
   color:$accent-white;
@@ -89,21 +91,38 @@ button {
   }
 }
 
-.piano {
-  width: 80%;
-  height: auto;
-  display: block;
+.big-image-container {
+  width: 800px;
+  height: 400px;
+  overflow:hidden;
   margin: 0 auto;
-  overflow: hidden;
 }
-.fa-angle-left {
-  position: absolute;
-  bottom: -10%;
-  left: 40%;
+.piano {
+  width: 100%;
+  height: auto;
 }
 
-.fa-angle-right {
-  position: absolute;
-  bottom: -10%;
-  right: 40%;
+.second {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+  h3 {
+    font-size: 1em;
+    text-transform: $all-caps;
+    letter-spacing: $header-letter-spacing;
+  }
+  p {
+    font-size: $blurb-font-size;
+    color: $text-color;
+    line-height: 1.25em;
+  }
 }
+
+.third img{
+    width: 100%;
+    height: auto;
+    padding: .25em;
+  }
+
+  

@@ -2,13 +2,13 @@
 body {
   background-color: #181818;
   color: #EEEEEE;
-  margin: 20px;
-  padding: 0;
+  padding: 5%;
   font-family: "Arimo", sans-serif; }
 
 .content-wrapper {
-  padding: 15%;
-  margin: 0 auto; }
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%; }
 
 .carousel {
   width: 70%; }
@@ -35,7 +35,7 @@ body {
   position: absolute; }
 
 .page-info {
-  width: 80%;
+  width: 90%;
   max-width: 800px;
   margin: 20px auto;
   text-align: center;
@@ -44,7 +44,7 @@ body {
     font-size: 2em;
     text-transform: uppercase;
     color: #EEEEEE;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
     margin-bottom: 5px; }
   .page-info h3 {
     font-size: .6em;
@@ -66,19 +66,31 @@ button {
     background-color: #EEEEEE;
     color: #181818; }
 
+.big-image-container {
+  width: 800px;
+  height: 400px;
+  overflow: hidden;
+  margin: 0 auto; }
+
 .piano {
-  width: 80%;
+  width: 100%;
+  height: auto; }
+
+.second {
+  width: 100%;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center; }
+  .second h3 {
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em; }
+  .second p {
+    font-size: 0.75em;
+    color: #7F7F7F;
+    line-height: 1.25em; }
+
+.third img {
+  width: 100%;
   height: auto;
-  display: block;
-  margin: 0 auto;
-  overflow: hidden; }
-
-.fa-angle-left {
-  position: absolute;
-  bottom: -10%;
-  left: 40%; }
-
-.fa-angle-right {
-  position: absolute;
-  bottom: -10%;
-  right: 40%; }
+  padding: .25em; }
