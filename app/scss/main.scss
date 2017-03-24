@@ -8,6 +8,8 @@ $blurb-font-size: .75em;
 $all-caps: uppercase;
 $header-letter-spacing: .2em;
 
+
+
 body {
    background-color: $body-color;
    color: $accent-white;
@@ -17,7 +19,7 @@ body {
 
 .content-wrapper {
   margin: 0 auto;
-  overflow: hidden;
+  // overflow: hidden;
   width: 100%;
 }
 .carousel {
@@ -91,10 +93,12 @@ button {
   }
 }
 
+.second {
+  overflow: hidden;
+}
 .big-image-container {
   width: 800px;
   height: 400px;
-  overflow:hidden;
   margin: 0 auto;
 }
 .piano {
@@ -125,4 +129,41 @@ button {
     padding: .25em;
   }
 
-  
+.breakout {
+  background-color: $accent-white;
+  color: $body-color;
+  margin:0 -100px;
+  overflow-x: visible;
+  img {
+    width: 100%;
+    height:20%;
+  }
+  .breakout-text {
+    margin: 0 20%;
+    padding: 10% 5%;
+    h2 {
+      font-size: 1em;
+      text-transform: $all-caps;
+      letter-spacing: $header-letter-spacing;
+    }
+    p {
+      font-size: $blurb-font-size;
+      color: $text-color;
+      line-height: 1.25em;
+    }
+  }
+}
+
+.small-line {
+  width: 15%;
+  height:0.5px;
+  background-color: $text-color;
+  display: block;
+}
+
+
+@media (max-width: 500px) {
+  .breakout img {
+    display: none;
+  }
+}
