@@ -2,8 +2,9 @@
 $header-font:'Source Sans Pro', sans-serif;
 $body-font:'Arimo', sans-serif;
 $body-color: #181818;
-$accent-white: #EEEEEE;
+$header-color: #EEEEEE;
 $text-color: #7F7F7F;
+$accent-color: #FF17A7;
 $blurb-font-size: .75em;
 $all-caps: uppercase;
 $header-letter-spacing: .2em;
@@ -12,7 +13,7 @@ $header-letter-spacing: .2em;
 
 body {
    background-color: $body-color;
-   color: $accent-white;
+   color: $header-color;
    padding: 5%;
    font-family: $body-font;
    height: 100%;
@@ -34,23 +35,50 @@ body {
    float:right;
 }
 
+.carousel {
+  position: relative;
+  margin: 70px auto 0;
+  width: 100%;
+}
 .carousel img {
   margin: 0 auto;
   padding: 0;
-  width: 200%;
+  width: 100%;
   height: auto;
 }
 .slick-slide {
-   height:70vh;
-   margin: 100px auto 0;
-   width: auto;
-
+  height: 70vh;
 }
 
 .slick-prev:before, .slick-next:before{
-    color:red;
+    display:none;
 }
 
+.fa-angle-left {
+  position: absolute;
+  bottom: 75%;
+  left: 2%;
+  z-index: 100;
+}
+
+.fa-angle-right {
+  position: absolute;
+  bottom: 75%;
+  right: 2%;
+}
+
+.slick-dots {
+  bottom: 220px;
+    li button:before {
+      font-size: 12px;
+      color: $header-color;
+      opacity: 1;
+    }
+}
+
+.slick-dotted.slick-slider {
+  margin-bottom: -200px;
+}
 
 .page-info {
    width: 90%;
@@ -61,7 +89,7 @@ body {
    h1 {
      font-size: 2em;
      text-transform: $all-caps;
-     color: $accent-white;
+     color: $header-color;
      letter-spacing: $header-letter-spacing;
      margin-bottom: 5px;
    }
@@ -82,11 +110,11 @@ body {
 button {
   padding: 10px 30px;
   text-transform: $all-caps;
-  border: 2px solid $accent-white;
+  border: 2px solid $header-color;
   background: transparent;
-  color:$accent-white;
+  color:$header-color;
   &:hover {
-    background-color: $accent-white;
+    background-color: $header-color;
     color: $body-color;
   }
 }
@@ -139,7 +167,7 @@ button {
 
 
 .breakout {
-  background-color: $accent-white;
+  background-color: $header-color;
   color: $body-color;
   margin:0 -100px;
   overflow-x: visible;
@@ -172,7 +200,7 @@ button {
 
   .caption {
     h4 {
-      color: $accent-white;
+      color: $header-color;
       text-transform: $all-caps;
       letter-spacing: $header-letter-spacing;
       font-size: .6em;
@@ -189,7 +217,7 @@ button {
     h1 {
       font-size: 2em;
       text-transform: $all-caps;
-      color: $accent-white;
+      color: $header-color;
       letter-spacing: $header-letter-spacing;
       margin-bottom: 10px;
     }
@@ -197,7 +225,7 @@ button {
       width: 100%;
     }
     h3 {
-      color: $accent-white;
+      color: $header-color;
       text-transform: $all-caps;
       letter-spacing: $header-letter-spacing;
       font-size: .75em;
@@ -248,7 +276,7 @@ button {
   h2 {
     font-size: 1.5em;
     text-transform: $all-caps;
-    color: $accent-white;
+    color: $header-color;
     letter-spacing: $header-letter-spacing;
     margin-bottom: 5px;
     padding-bottom: 0;
@@ -273,7 +301,7 @@ button {
   h6 {
     font-size: .6em;
     text-transform: $all-caps;
-    color: $accent-white;
+    color: $header-color;
     letter-spacing: $header-letter-spacing;
     margin: 0 0 5px;
     padding-bottom: 0;
@@ -300,6 +328,29 @@ figcaption {
 }
 
 @media (min-width: 601px) {
+
+  .fa-angle-left {
+    position: absolute;
+    bottom: 50%;
+    left: 2%;
+    z-index: 100;
+  }
+
+  .fa-angle-right {
+    position: absolute;
+    bottom: 50%;
+    right: 2%;
+  }
+
+  .slick-dots {
+    bottom: 15px;
+  }
+
+  .slick-dotted.slick-slider {
+    margin-bottom: 0;
+  }
+
+
   .third img:nth-child(n+2){
       width: 48%;
       height: auto;
@@ -324,5 +375,36 @@ figcaption {
   }
   .fifth {
     clear:both;
+    h3 {
+      font-size: 1em;
+    }
+    p {
+      font-size: .75em;
+    }
+    img {
+      width: 80%;
+      max-width: 800px;
+    }
+  }
+  .sidepanel {
+    padding-top: 40px;
+  }
+  .caption {
+    padding-right: 30px;
+    h4 {
+      color: $header-color;
+      text-transform: $all-caps;
+      letter-spacing: $header-letter-spacing;
+      font-size: .75em;
+    }
+    p {
+      color: $text-color;
+      font-size: .6em;
+    }
+  }
+  .sixth {
+    width: 80%;
+    margin: 50px auto;
+    max-width: 800px;
   }
 }

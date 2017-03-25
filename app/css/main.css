@@ -19,19 +19,43 @@ body {
   text-transform: uppercase;
   float: right; }
 
+.carousel {
+  position: relative;
+  margin: 70px auto 0;
+  width: 100%; }
+
 .carousel img {
   margin: 0 auto;
   padding: 0;
-  width: 200%;
+  width: 100%;
   height: auto; }
 
 .slick-slide {
-  height: 70vh;
-  margin: 100px auto 0;
-  width: auto; }
+  height: 70vh; }
 
 .slick-prev:before, .slick-next:before {
-  color: red; }
+  display: none; }
+
+.fa-angle-left {
+  position: absolute;
+  bottom: 75%;
+  left: 2%;
+  z-index: 100; }
+
+.fa-angle-right {
+  position: absolute;
+  bottom: 75%;
+  right: 2%; }
+
+.slick-dots {
+  bottom: 220px; }
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #EEEEEE;
+    opacity: 1; }
+
+.slick-dotted.slick-slider {
+  margin-bottom: -200px; }
 
 .page-info {
   width: 90%;
@@ -235,6 +259,19 @@ figcaption {
     display: none; } }
 
 @media (min-width: 601px) {
+  .fa-angle-left {
+    position: absolute;
+    bottom: 50%;
+    left: 2%;
+    z-index: 100; }
+  .fa-angle-right {
+    position: absolute;
+    bottom: 50%;
+    right: 2%; }
+  .slick-dots {
+    bottom: 15px; }
+  .slick-dotted.slick-slider {
+    margin-bottom: 0; }
   .third img:nth-child(n+2) {
     width: 48%;
     height: auto;
@@ -252,4 +289,27 @@ figcaption {
       width: 55%;
       padding: 2%; }
   .fifth {
-    clear: both; } }
+    clear: both; }
+    .fifth h3 {
+      font-size: 1em; }
+    .fifth p {
+      font-size: .75em; }
+    .fifth img {
+      width: 80%;
+      max-width: 800px; }
+  .sidepanel {
+    padding-top: 40px; }
+  .caption {
+    padding-right: 30px; }
+    .caption h4 {
+      color: #EEEEEE;
+      text-transform: uppercase;
+      letter-spacing: 0.2em;
+      font-size: .75em; }
+    .caption p {
+      color: #7F7F7F;
+      font-size: .6em; }
+  .sixth {
+    width: 80%;
+    margin: 50px auto;
+    max-width: 800px; } }

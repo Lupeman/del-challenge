@@ -3,9 +3,10 @@ $('.carousel').slick({
     accessibility: true,
     autoplay: true,
     autoplaySpeed: 5000,
-    arrows: false,
-    prevArrow:'<i class="fa fa-angle-left" aria-hidden="true"></i>',
-    nextArrow: '<i class="fa fa-angle-right" aria-hidden="true"></i>',
+    dots:true,
+    arrows: true,
+    prevArrow:'<i class="fa fa-angle-left fa-3x" aria-hidden="true"></i>',
+    nextArrow: '<i class="fa fa-angle-right fa-3x" aria-hidden="true"></i>',
     responsive: [
   {
     breakpoint: 1024,
