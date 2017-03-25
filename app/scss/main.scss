@@ -28,12 +28,13 @@ body {
    height: 30px;
    width: auto;
    float:left;
-
 }
 .projectName {
    text-transform: $all-caps;
    float:right;
 }
+
+//carousel
 
 .carousel {
   position: relative;
@@ -80,6 +81,7 @@ body {
   margin-bottom: -200px;
 }
 
+//first section page title & explanation
 .page-info {
    width: 90%;
    max-width: 800px;
@@ -119,6 +121,8 @@ button {
   }
 }
 
+//second section
+
 .second {
   overflow: hidden;
 }
@@ -149,6 +153,7 @@ button {
   }
 }
 
+//third section
 
 .third img{
     width: 100%;
@@ -164,7 +169,7 @@ button {
     flex-wrap: wrap;
 }
 
-
+//breakout
 
 .breakout {
   background-color: $header-color;
@@ -198,76 +203,83 @@ button {
   display: block;
 }
 
-  .caption {
-    h4 {
-      color: $header-color;
-      text-transform: $all-caps;
-      letter-spacing: $header-letter-spacing;
-      font-size: .6em;
-    }
-    p {
-      color: $text-color;
-      font-size: .5em;
-    }
-  }
+//general caption styling
 
-  .fifth {
-    text-align: center;
-    padding-bottom: 10px;
-    h1 {
-      font-size: 2em;
-      text-transform: $all-caps;
-      color: $header-color;
-      letter-spacing: $header-letter-spacing;
+.caption {
+  h4 {
+    color: $header-color;
+    text-transform: $all-caps;
+    letter-spacing: $header-letter-spacing;
+    font-size: .6em;
+  }
+  p {
+    color: $text-color;
+    font-size: .5em;
+  }
+}
+
+//fifth section
+
+.fifth {
+  text-align: center;
+  padding-bottom: 10px;
+  h1 {
+    font-size: 2em;
+    text-transform: $all-caps;
+    color: $header-color;
+    letter-spacing: $header-letter-spacing;
+    margin-bottom: 10px;
+  }
+  img {
+    width: 100%;
+  }
+  h3 {
+    color: $header-color;
+    text-transform: $all-caps;
+    letter-spacing: $header-letter-spacing;
+    font-size: .75em;
+  }
+  p {
+    color: $text-color;
+    font-size: .5em;
+  }
+}
+
+//sixth section
+
+.sixth {
+  width: 100%;
+  .sidepanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30%;
+    float:left;
+    .caption {
       margin-bottom: 10px;
     }
-    img {
-      width: 100%;
-    }
-    h3 {
-      color: $header-color;
-      text-transform: $all-caps;
-      letter-spacing: $header-letter-spacing;
-      font-size: .75em;
-    }
-    p {
-      color: $text-color;
-      font-size: .5em;
-    }
   }
-
-
-  .sixth {
-    width: 100%;
-    .sidepanel {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 30%;
-      float:left;
-      .caption {
-        margin-bottom: 10px;
+  .images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    float: right;
+    overflow: hidden;
+      img:nth-child(1) {
+        width:100%;
+        height: 100%;
+        padding:1%;
       }
-    }
-    .images {
-      display: flex;
-      flex-wrap: wrap;
-      width: 70%;
-      float: right;
-      overflow: hidden;
-        img:nth-child(1) {
-          width:100%;
-          height: 100%;
-          padding:1%;
-        }
-        img:nth-child(n+2) {
-          width:48%;
-          height: 100%;
-          padding:1%;
+      img:nth-child(n+2) {
+        width:48%;
+        height: 100%;
+        padding:1%;
 
-        }
-    }
+      }
   }
+}
+
+//seventh section
 
 .seventh {
   border-top: 1px solid $text-color;
@@ -320,6 +332,8 @@ figcaption {
   padding: 0;
   margin: 0 0 20px;
 }
+
+//media queries
 
 @media (max-width: 600px) {
   .breakout img {
